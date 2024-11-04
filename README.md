@@ -25,34 +25,15 @@ Testing will be performed on the following entry sizes to replicate a range of s
 
  
 I will be evaluating both true and false search queries in the respective data types:
- 
-String / true: 
- 
-String / false:
- 
-Int / true:
- 
-Int / false:
- 
+String / true |
+String / false |
+Int / true |
+Int / false |
 
  
 Dataset used 
 https://www.kaggle.com/code/imranp/starter-synthetic-financial-datasets-cd6449a6-6/notebook 
 
-Test Results
-Time taken to perform search using HE (sec):
-Entries 		Str / T		Str / F		Int /T		Int / F	
-10		4	-	4	-	4	-	4	-
-50		13	-	15	-	13	-	14	-
-100		23	-	23	-	21	-	22	-
-500		   108	1m 48s	107	1m 47s	108	1m 47s	108	1m 48s
-1,000		224	3m 44s	221	3m 41s	222	3m 42s	222	3m 44s
-5,000		1049	17m 29s	1058	17m 38s	1053	17m 33s	1051	17m 31s
-10,000		2081	34m 41s	2074	34m 34s	2068	34m 28s	2080	34m 40s
-50,000		10440	2h 54m	10238	2h 50m	10445	2h 54m	10347	2h 52m
-100,000		20963	5h 49m	21004	5h 50m	20777	5h 46m	21010	5h 50m
-
- 
 Analysis
 •	Data type did not affect the time taken to perform the search as results were consistent across all tests.
 •	True/False search queries also did not affect the time taken as these results were just as consistent.
